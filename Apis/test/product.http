@@ -1,0 +1,40 @@
+POST http://localhost:8000/products HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "My Product",
+    "price": 160
+}
+
+###
+
+GET http://localhost:8000/products HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTQ1MTM2MTIsInN1YiI6IjQxYjc5YzQ2LWYxZDAtNDg1MS05OWU5LWM1MzQ0NzQ2N2UzNSJ9.dQxxzpygY9T9dAyKniEsMq14RyStuohvrYPKwBgWsks
+
+###
+
+GET http://localhost:8000/products/f5676d29-911a-47e7-89b4-a53a8111b4f6 HTTP/1.1
+Content-Type: application/json
+
+###
+
+PUT http://localhost:8000/products/f5676d29-911a-47e7-89b4-a53a8111b4f6 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "My Product Updated",
+    "price": 260
+}
+
+
+###
+
+DELETE http://localhost:8000/products/f5676d29-911a-47e7-89b4-a53a8111b4f6 HTTP/1.1
+
+//acessar o sqlite sqlite3 cmd/server/test.db
+
+//Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTQ3NzM0NjcsInN1YiI6IjQxYjc5YzQ2LWYxZDAtNDg1MS05OWU5LWM1MzQ0NzQ2N2UzNSJ9.0ezL_Z6X5H_S1WAma2spUVL3rylCalaOw34S45bGrxo
+
+
+//ff0c63de-c55d-4bd7-9b5c-c3eb1917da95
